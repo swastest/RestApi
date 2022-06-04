@@ -47,7 +47,6 @@ public class Tests {
         Assertions.assertEquals(morpheusRequest.getJob(), resp.getJob());
         Assertions.assertEquals(morpheusRequest.getName(), resp.getName());
         LocalDate date = LocalDate.now();
- //       Assertions.assertTrue(list.stream().allMatch(x -> x.getAvatar().contains(x.getId().toString())));
         Assertions.assertTrue(resp.getUpdatedAt().contains(date.toString()));
 //        String regex = "(.{5})$";
 //        String currentTime = Clock.systemUTC().instant().toString().replaceAll(regex,"");
