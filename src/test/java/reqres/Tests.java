@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 import reqres.models.*;
 
 
+import java.time.Clock;
+import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -44,7 +46,13 @@ public class Tests {
                         .extract().as(MorpheusResponse.class);
         Assertions.assertEquals(morpheusRequest.getJob(), resp.getJob());
         Assertions.assertEquals(morpheusRequest.getName(), resp.getName());
-        Assertions.assertNotNull(resp.getCreatedAt());
+        LocalDate date = LocalDate.now();
+ //       Assertions.assertTrue(list.stream().allMatch(x -> x.getAvatar().contains(x.getId().toString())));
+        Assertions.assertTrue(resp.getUpdatedAt().contains(date.toString()));
+//        String regex = "(.{5})$";
+//        String currentTime = Clock.systemUTC().instant().toString().replaceAll(regex,"");
+//        Assertions.assertEquals(resp.getCreatedAt().replaceAll(regex,""),currentTime);
+//        System.out.println("=======" +date + "======="+ currentTime);
     }
 
     @Test
