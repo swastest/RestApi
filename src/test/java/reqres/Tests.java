@@ -48,7 +48,7 @@ public class Tests {
         Assertions.assertEquals(morpheusRequest.getName(), resp.getName());
         LocalDate date = LocalDate.now();
         Assertions.assertTrue(resp.getUpdatedAt().contains(date.toString()));
-//        String regex = "(.{5})$";
+//        String regex = "(.{5})$";  - работает, но это тупо
 //        String currentTime = Clock.systemUTC().instant().toString().replaceAll(regex,"");
 //        Assertions.assertEquals(resp.getCreatedAt().replaceAll(regex,""),currentTime);
 //        System.out.println("=======" +date + "======="+ currentTime);
