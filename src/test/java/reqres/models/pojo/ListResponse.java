@@ -1,4 +1,4 @@
-package reqres.models;
+package reqres.models.pojo;
 
 import io.qameta.allure.internal.shadowed.jackson.annotation.JsonIgnoreProperties;
 

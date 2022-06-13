@@ -1,12 +1,10 @@
-package reqres;
+package reqres.withPojoTest;
 
 import io.restassured.http.ContentType;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import reqres.models.*;
+import reqres.models.pojo.*;
 
-
-import java.time.Clock;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -22,6 +20,7 @@ public class Tests {
                         .contentType(ContentType.JSON)
                         .body(morpheusRequest)
                         .when()
+                        .log().all()
                         .post("https://reqres.in/api/users")
                         .then().log().body()
                         .statusCode(201)

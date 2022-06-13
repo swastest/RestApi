@@ -1,6 +1,8 @@
 plugins {
     id 'java-library'
     id "io.qameta.allure" version "2.9.6"
+    //Ломбок тут подключила только
+    id "io.freefair.lombok" version "6.0.0-m2"
 }
 
 repositories {
@@ -35,7 +37,8 @@ dependencies {
             "com.github.javafaker:javafaker:$fakerVersion",
             "org.slf4j:slf4j-simple:$slfVersion",
             "io.rest-assured:rest-assured:4.5.1",
-            'org.projectlombok:lombok:1.18.10',
+ //           'org.projectlombok:lombok:1.18.10',
+  //          "com.fasterxml.jackson.core:jackson-databind:2.11.2",
             'org.postgresql:postgresql:42.1.4',
             'org.springframework:spring-jdbc:5.3.20'
     )

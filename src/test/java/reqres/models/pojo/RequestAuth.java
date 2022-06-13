@@ -1,4 +1,4 @@
-package reqres.models;
+package reqres.models.pojo;
 
 public class RequestAuth {
     private String password;
