@@ -3,7 +3,7 @@ package reqres.withLombokTests;
 import io.restassured.http.ContentType;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import reqres.models.lombok.*;
+import reqres.models.lombokModels.*;
 
 import java.time.LocalDate;
 import java.util.List;

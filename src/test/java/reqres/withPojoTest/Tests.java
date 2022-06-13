@@ -3,7 +3,7 @@ package reqres.withPojoTest;
 import io.restassured.http.ContentType;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import reqres.models.pojo.*;
+import reqres.models.pojoModels.*;
 
 import java.time.LocalDate;
 import java.util.List;

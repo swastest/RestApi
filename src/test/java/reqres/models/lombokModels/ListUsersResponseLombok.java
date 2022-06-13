@@ -1,4 +1,4 @@
-package reqres.models.lombok;
+package reqres.models.lombokModels;
 
 import io.qameta.allure.internal.shadowed.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;

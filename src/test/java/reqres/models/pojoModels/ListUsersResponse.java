@@ -1,4 +1,4 @@
-package reqres.models.pojo;
+package reqres.models.pojoModels;
 
 public class ListUsersResponse {
     private String last_name;
